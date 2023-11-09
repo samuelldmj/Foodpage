@@ -1,0 +1,553 @@
+ * {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    box-sizing: border-box;
+    position: block;
+} 
+
+
+/* NAV section */
+
+.logo {
+  font-family:  Ubuntu, sans-serif;
+  font-weight: bolder;
+  font-size: 2em;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 7px 100px;
+  line-height: 80px;
+}
+
+
+nav {
+  background: black;
+  position:sticky;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid rgba(212, 158, 158, 0.02);
+  border-bottom: 1px solid rgba(212, 158, 158, 0.02);
+}
+
+.check_btn {
+  font-size: 30px;
+  color: aliceblue;
+  float: right;
+  margin-right: 40px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+nav ul{
+  margin-right: 250px;
+  float: right; 
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  line-height: 80px;
+}
+
+nav ul li a {
+  color:aliceblue;
+  padding: 7px 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+li a:hover {
+   /* border-bottom: 3px solid red transparent; */
+  transition: 1s;
+  /* color: red; */
+  background: red;
+  border-radius: 2px; 
+}
+
+
+/* =====================================================================================================================================
+Home section
+============================================================================================================================== */
+.banner{
+  padding: 100px;
+  position: block;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient( rgba(212, 158, 158, 0.02), rgba(41, 6, 6, 0.43)), url(pepper.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10000;
+} 
+
+div .in2 {
+  font-size: 4em;
+  color: aliceblue;
+  text-align: center;
+}
+.in3{
+  font-size: 2em;
+  color: aliceblue;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.btn{
+    font-size: 1em;
+    color:aliceblue;
+    background: black;
+    display: inline-block;
+    padding: 20px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+  letter-spacing: 5px;
+}
+
+
+/* ======================================================================================================================
+ About us section 
+ =======================================================================================================================*/
+.abt {
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    background: burlywood;
+    position: block;
+}
+.abtin {
+    /* position: relative; */
+    width: 45%  
+}  
+.abtin2 {
+  color: black;
+} 
+.abtin3 {
+  display: flex;
+  justify-content: left;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;        
+}
+.abtin4 {
+  width: 450px;
+  height: 450px;  
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgb(229, 252, 227);
+  margin: 20px 20px;
+  background: whitesmoke;
+}
+.abtin5 {
+  max-width: 400px;
+}
+.abtin5 #veg {
+  width: 400px;
+  height: 400px;
+} 
+
+
+
+/* ======================================================================================================================
+                                            /* list of dishes 
+===========================================================================================================*/
+
+
+.dsh {
+  width: 100%;
+  padding: 10px 40px;
+  display: inline-block;
+  justify-content: space-between; 
+  /* background: wheat; */
+   position: block; 
+}
+
+.dsh2 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* .dsh3 {
+  display: inline-flex;
+  justify-content: left;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+} */
+.dsh4 {
+  width: 350px;
+  height: 390px;  
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgb(229, 252, 227);
+  margin: 20px 20px;
+  background: whitesmoke;
+
+}
+.dsh6 {
+  width: 310px;
+  height: 310px;
+}
+.dsh_p {
+  text-align: center;
+  font-family: 'Courier New', Courier;
+  font-weight: 70px;
+  font-size: 20px;
+  background: black;
+  margin-top: 7px;
+  text-transform: capitalize;
+  color: aliceblue;
+}
+p {
+  
+    text-align: center;
+   
+}
+#vw {
+  font-size: 1em;
+    color:aliceblue;
+    background: black;
+    display: inline;
+    padding: 20px 30px;
+    margin-top: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+#vw:hover{
+  letter-spacing: 5px;
+}
+
+
+/* ========================================================================================================== 
+Customer Review Section 
+===========================================================================================================*/
+
+.banner2 {
+  padding: 80px;
+  position: block;
+  margin-top: 100px;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient( rgba(22, 22, 22, 0.02), rgba(22, 1, 1, 0)), url(glow.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10000;
+}
+ .banner2_h2 {
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  margin-top: 1px;
+}
+.banner2_p {
+  font-weight: bold;
+  font-size: 1em;
+  color: aliceblue;
+}
+
+ .banner2_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
+} 
+
+.banner2_card {
+  width: 350px;
+  height: 500px;  
+  padding: 20px;
+  box-shadow: rgb(229, 252, 227);
+  margin: 20px 20px;
+  background: whitesmoke;
+}
+
+.banner2_inner {
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+  margin-top: 1px;
+  border-radius: 50%;
+  text-align: center;
+}
+.banner2_p2 {
+  text-align: center;
+  margin-top: 50px;
+  font-style: italic;
+}
+.banner2_p2b{
+  text-align: center;
+  margin-top: 35px;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+/* ========================================================================================================== 
+/* Contact us section 
+===========================================================================================================*/
+
+
+.banner3 {
+  width: 100%;
+  padding: 30px 50px;
+  display: block;
+  justify-content: space-between;
+  background: burlywood;
+  position: block;
+  margin-top: 65px;
+}
+.banner3_card3 {
+  width: 500px;
+  height: 550px;  
+  padding: 20px;
+  box-shadow: rgb(229, 252, 227);
+  margin: 20px 20px;
+  background: whitesmoke;
+}
+
+.banner3_h2{
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  margin-top: 1px;
+  text-align: center;
+
+}
+.banner3_p {
+  font-weight: bold;
+  font-size: 1em;
+  color: aliceblue;
+}
+
+.banner3_div_p {
+  font-weight: bold;
+  font-size: 2em;
+  color:red;
+  text-align: left;
+  margin-top: 50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0px;
+  /* box-sizing: border-box; */
+  border: 1px solid red;
+  border-radius: 4px
+}
+
+textarea {
+  /* name="message"  style="width: 100%;" */
+  width: 100%;
+  border: 1px solid red;
+  padding: 12px 20px;
+  border-radius: 4px;
+  margin: 20px 0px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.banner3_btn {
+  padding: 10px 15px;
+  border: 2px;
+  background: red;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+footer {
+  background: aliceblue;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+/* ====================================================================================================================
+                                                    MEDIA QUERY
+===================================================================================================================== */
+
+@media (max-width: 1066px) {
+
+  
+  .logo {
+    font-family:  Ubuntu, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: aliceblue;
+    text-decoration: none;
+    padding-left: 25px;
+    line-height: 80px;
+  } 
+
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  div.media_div1 {
+    margin-top: 5px;
+  }
+
+  div .in2 {
+    font-size: 2em;
+    color: aliceblue;
+    text-align: center;
+    
+  }
+  .abtin {
+    /* position: relative; */
+    width: 100%;
+    margin: auto;  
+  }
+
+  .media_p1{
+    text-align: center;
+  }
+
+  .abtin3 {
+    display: none; 
+  }
+
+  .banner2_card {
+    width: 350px;
+    height: 500px;  
+    padding: 5px;
+    box-shadow: rgb(229, 252, 227);
+    margin: 10px 10px;
+    background: whitesmoke;
+  }
+
+  .banner2_p2 {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 11px;
+  }
+  .banner2_p2b{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: medium;
+  }
+
+
+  .banner3 {
+    width: 100%;
+    padding: 15px 25px;
+    display: block;
+    background: burlywood;
+    position: block;
+    margin-top: 65px;
+  }
+
+  .banner3_h2{
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+  
+  }
+  .banner3_p {
+    font-weight: bold;
+    font-size: 20px;
+    color: aliceblue;
+  }
+  
+  .banner3_div_p {
+    font-weight: bold;
+    font-size: 20px;
+    color:red;
+    text-align: left;
+    margin-top: 25px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .banner3_card3 {
+    width: 250px;
+  height: 500px;  
+  padding: 10px;
+  box-shadow: rgb(229, 252, 227);
+  margin: auto;
+  background: whitesmoke;
+  }
+
+  textarea {
+    /* name="message"  style="width: 100%;" */
+    width: 100%;
+    border: 2px solid red;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin: 20px 0px;
+    resize: none;
+    box-sizing: border-box;
+  }
+}
+
+
+@media (max-width: 858px)
+{
+.check_btn{
+  display: block;
+}
+
+ul {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url(pepper.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+}
+nav ul li {
+  display: block;
+}
+
+nav ul li a {
+  font-size: 15px;
+}
+
+a:hover {
+  background: none;
+  color: red;
+}
+
+#check:checked ~ ul {
+  left: 0px;
+}
+}
